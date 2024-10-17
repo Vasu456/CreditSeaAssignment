@@ -1,0 +1,172 @@
+/* Container styles */
+.Application {
+  text-align: center;
+  background-color: #f0f0f0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Loan application container */
+.LoanApplicationForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+}
+
+.LoanApplicationForm input,
+.LoanApplicationForm textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  color: #333;
+}
+
+.LoanApplicationForm button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.LoanApplicationForm button:hover {
+  background-color: #45a049;
+}
+
+/* Balance section */
+.BalanceSection {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.BalanceSection h3 {
+  font-size: 1.25rem;
+}
+
+.BalanceSection p {
+  font-size: 2rem;
+  color: #4caf50;
+}
+
+/* Tabs */
+.Tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.Tabs button {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.Tabs button.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.Tabs button:hover {
+  background-color: #ddd;
+}
+
+/* Search bar */
+.SearchBar {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.SearchBar input {
+  width: 100%;
+  padding: 12px 40px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.SearchBar .FaSearch {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+/* Loan listing table */
+.LoanListing {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.LoanListing .LoanListingItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.LoanListing .LoanListingItem:hover {
+  background-color: #eee;
+}
+
+.LoanListing .LoanListingItem div {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Modal for popup */
+.PopupModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 500px;
+  z-index: 1000;
+}
+
+/* Overlay */
+.PopupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
